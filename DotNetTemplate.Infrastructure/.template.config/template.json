@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "AppShapes",
+  "classifications": ["AppShapes", "Infrastructure"],
+  "identity": "DotNetTemplate.Infrastructure",
+  "name": "AppShapes Infrastructure",
+  "shortName": "dotnettemplate-infrastructure",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "sourceName": "DotNetTemplate.Infrastructure",
+  "defaultName": "DotNetTemplate.Infrastructure"
+}

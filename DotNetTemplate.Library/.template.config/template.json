@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "AppShapes",
+  "classifications": ["AppShapes", "Library"],
+  "identity": "DotNetTemplate.Library",
+  "name": "AppShapes Library",
+  "shortName": "dotnettemplate-library",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "sourceName": "DotNetTemplate.Library",
+  "defaultName": "DotNetTemplate.Library"
+}

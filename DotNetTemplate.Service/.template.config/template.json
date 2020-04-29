@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "AppShapes",
+  "classifications": ["AppShapes", "Service"],
+  "identity": "DotNetTemplate.Service",
+  "name": "AppShapes Service",
+  "shortName": "dotnettemplate-service",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "sourceName": "DotNetTemplate.Service",
+  "defaultName": "DotNetTemplate.Service"
+}

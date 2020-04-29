@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "AppShapes",
+  "classifications": ["AppShapes", "Test"],
+  "identity": "DotNetTemplate.Tests",
+  "name": "AppShapes Tests",
+  "shortName": "dotnettemplate-test",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "sourceName": "DotNetTemplate.Tests",
+  "defaultName": "DotNetTemplate.Tests"
+}
