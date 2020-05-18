@@ -4,15 +4,15 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Authors>@RjaeEaston</Authors>
     <Company>AppShapes</Company>
-    <Description>DotNetTemplate.Library</Description>
+    <Description>DotNetTemplate</Description>
     <Version>1.0.0</Version>
-    <PackageId>DotNetTemplate.Library</PackageId>
+    <PackageId>DotNetTemplate</PackageId>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.4.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.5.0" />
   </ItemGroup>
 
 </Project>
