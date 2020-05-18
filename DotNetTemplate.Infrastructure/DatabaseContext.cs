@@ -1,15 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AppShapes.Core.Database;
+using Microsoft.EntityFrameworkCore;
 
 namespace DotNetTemplate.Infrastructure
 {
     // TODO: Rename this to match your domain (e.g., PersonContext).
-    public class DatabaseContext : DbContext
+    public class DatabaseContext : OutboxContext
     {
-        public DatabaseContext(DbContextOptions options) : base(options)
+        public DatabaseContext()
         {
         }
 
-        protected DatabaseContext()
+        public DatabaseContext(DbContextOptions options) : base(options)
         {
         }
     }

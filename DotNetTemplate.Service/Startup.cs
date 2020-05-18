@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿using AppShapes.Core.Database;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,21 +13,21 @@ namespace DotNetTemplate.Service
         {
         }
 
+        protected virtual void ConfigureDatabase(DbContextOptionsBuilder builder, string connectionString)
+        {
+            builder.UseNpgsql(connectionString);
+        }
+
+        protected virtual void ConfigureEntityFramework(IServiceCollection services)
+        {
+            services.AddEntityFrameworkNpgsql();
+        }
+
+        // TODO: Replace DbContext with your domain context, e.g., InventoryContext.
         protected override void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
             base.ConfigureServices(services, configuration);
-            // TODO: Replace DbContext with your domain context, e.g., InventoryContext.
-            services.AddEntityFrameworkNpgsql().AddDbContext<DbContext>(UsePostgreSQL);
-        }
-
-        protected virtual string GetConnectionString()
-        {
-            return Configuration.GetConnectionString("DatabaseConnection");
-        }
-
-        protected virtual void UsePostgreSQL(DbContextOptionsBuilder builder)
-        {
-            builder.UseNpgsql(GetConnectionString());
+            new ConfigureDatabaseCommand().Execute<DbContext>(services, configuration, ConfigureEntityFramework, ConfigureDatabase);
         }
     }
 }
